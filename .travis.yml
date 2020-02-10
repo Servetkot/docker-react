@@ -4,7 +4,7 @@ services:
 
 
 before_install:
-  - docker build -t Servetkot/docker-react -f Dockerfile.dev .
+  - docker build -t servetkot/docker-react -f Dockerfile.dev .
 
 script:
   - docker run -e CI=true Servetkot/docker-react npm run test
